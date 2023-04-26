@@ -90,6 +90,7 @@ class _SecondScreenState extends State<SecondScreen> {
         body: Stack(
           children: [
             GoogleMap(
+              mapType: MapType.terrain,
               onMapCreated: _onMapCreated,
               initialCameraPosition: CameraPosition(
                 target: LatLng(latitude, longitude),
